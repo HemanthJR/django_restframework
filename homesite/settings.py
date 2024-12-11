@@ -145,3 +145,7 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': True,
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # Default session engine (database-backed)
+SESSION_COOKIE_NAME = 'sessionid'  # Name of the cookie that stores the session ID
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True  # Default is False
